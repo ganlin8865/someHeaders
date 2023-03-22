@@ -27,9 +27,6 @@
     <ClCompile Include="littletools.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="heap[test].cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="windowstools.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

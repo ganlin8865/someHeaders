@@ -2,6 +2,8 @@
 
 HCRYPTPROV prov;
 
+//About Window
+
 void sHideWindow(HWND hwnd)
 {
 	ShowWindow(hwnd, SW_HIDE);
@@ -11,6 +13,18 @@ void sShowWindow(HWND hwnd)
 {
 	ShowWindow(hwnd, SW_SHOW);
 }
+
+void sMinWindow(HWND hwnd)
+{
+    ShowWindow(hwnd, SW_SHOWMINIMIZED);
+}
+
+void sMaxWindow(HWND hwnd)
+{
+    ShowWindow(hwnd, SW_SHOWMAXIMIZED);
+}
+
+//About Random
 
 int RealRandom()
 {
@@ -25,3 +39,5 @@ int RealRandom()
     CryptGenRandom(prov, sizeof(out), (BYTE*)(&out));
     return out & 0x7fffffff;
 }
+
+

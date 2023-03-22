@@ -8,6 +8,9 @@
 
 void sHideWindow(HWND hwnd);
 void sShowWindow(HWND hwnd);
+void sMinWindow(HWND hwnd);
+void sMaxWindow(HWND hwnd);
+
 
 //About RealRandom
 
