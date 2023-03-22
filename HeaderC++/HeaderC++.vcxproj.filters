@@ -21,6 +21,12 @@
     <ClCompile Include="winmsg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="littletools.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="littletools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="winmsg.h">
