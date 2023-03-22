@@ -9,5 +9,8 @@
 void sHideWindow(HWND hwnd);
 void sShowWindow(HWND hwnd);
 
+//About RealRandom
+
+int RealRandom();
 
 #endif 
