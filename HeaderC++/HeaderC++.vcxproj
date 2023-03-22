@@ -128,11 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HeaderC++.cpp" />
+    <ClCompile Include="heap[test].cpp" />
     <ClCompile Include="littletools.cpp" />
     <ClCompile Include="littletools.h" />
+    <ClCompile Include="windowstools.cpp" />
     <ClCompile Include="winmsg.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="windowstools.h" />
     <ClInclude Include="winmsg.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
