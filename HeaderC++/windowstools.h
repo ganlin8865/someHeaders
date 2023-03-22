@@ -4,7 +4,7 @@
 
 #include <windows.h>
 
-//Aout Window
+//About Window
 
 void sHideWindow(HWND hwnd);
 void sShowWindow(HWND hwnd);
