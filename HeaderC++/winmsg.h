@@ -22,18 +22,23 @@ void MsgWarningW(LPCWSTR lpTitle, LPCWSTR lpInfo);
 void MsgInfoA(LPCSTR lpTitle, LPCSTR lpInfo);
 void MsgInfoW(LPCWSTR lpTitle, LPCWSTR lpInfo);
 
+void MsgQuestionA(LPCSTR lpTitle, LPCSTR lpInfo);
+void MsgQuestionW(LPCWSTR lpTitle, LPCWSTR lpInfo);
+
 #ifdef UNICODE
 #define MessageBoxTimeout MessageBoxTimeoutW
 #define MsgBox MsgBoxW
 #define MsgError MsgErrorW
 #define MsgWarning MsgWarningW
 #define MsgInfo MsgInfoW
+#define MsgQuestion MsgQuestionW
 #else
 #define MessageBoxTimeout MessageBoxTimeoutA
 #define MsgBox MsgBoxA
 #define MsgError MsgErrorA
 #define MsgWarning MsgWarningA
 #define MsgInfo MsgInfoA
+#define MsgQuestion MsgQuestionW
 #endif
 
 #endif

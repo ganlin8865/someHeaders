@@ -39,3 +39,14 @@ void MsgInfoW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 {
 	MsgBoxW(lpTitle, lpInfo, 0x00000040L);
 }
+
+void MsgQuestionA(LPCSTR lpTitle, LPCSTR lpInfo)
+{
+	MsgBoxA(lpTitle, lpInfo, 0x00000020L);
+}
+
+void MsgQuestionW(LPCWSTR lpTitle, LPCWSTR lpInfo)
+{
+	MsgBoxW(lpTitle, lpInfo, 0x00000020L);
+}
+
