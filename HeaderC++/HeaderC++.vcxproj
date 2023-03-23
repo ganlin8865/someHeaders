@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="littletools.cpp" />
     <ClCompile Include="littletools.h" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="windowstools.cpp" />
   </ItemGroup>
   <ItemGroup>
