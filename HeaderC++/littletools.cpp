@@ -1,5 +1,6 @@
 #include "littletools.h"
 
+
 using namespace std;
 
 //About Sort
@@ -32,6 +33,10 @@ void InsertionSort(int arr[], int size)
         arr[j + 1] = key; 
     }
 }
+
+//About Stack
+
+
 
 //About Random
 
