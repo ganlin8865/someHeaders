@@ -5,27 +5,28 @@
 #include <random>
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 namespace ltools
 {
 	//About Stack
 	namespace stack
 	{
-		class stack
+		class Stack
 		{
 		private:
 			int* arr;
 			int capacity;
 			int top;
 		public:
-			stack(int cap = 10)
+			Stack(int cap = 10)
 			{
 				arr = new int[cap];
 				capacity = cap;
 				top = -1;
 			}
 
-			~stack()
+			~Stack()
 			{
 				delete[] arr;
 			}
@@ -84,7 +85,7 @@ namespace ltools
 				return arr[top];
 			}
 
-			friend std::ostream& operator<<(std::ostream& os, const stack& s)
+			friend std::ostream& operator<<(std::ostream& os, const Stack& s)
 			{
 				os << "[";
 				for (int i = 0; i <= s.top; i++)
@@ -99,7 +100,7 @@ namespace ltools
 				return os;
 			}
 
-			void swap(stack& other)
+			void swap(Stack& other)
 			{
 				std::swap(arr, other.arr);
 				std::swap(capacity, other.capacity);
@@ -156,7 +157,7 @@ namespace ltools
 				return max_value;
 			}
 
-			bool operator==(const stack& other) const
+			bool operator==(const Stack& other) const
 			{
 				if (top != other.top)
 				{
@@ -173,6 +174,7 @@ namespace ltools
 			}
 		};
 	}
+	
 	//About Sort
 	namespace sort
 	{
@@ -184,8 +186,6 @@ namespace ltools
 	namespace random
 	{
 		int RandomInt(int L, int R);
-		float RandomFloat(float L, float R);
-		double RandomDouble(double L, double R);
 	}
 }
 

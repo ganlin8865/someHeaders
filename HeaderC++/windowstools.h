@@ -66,6 +66,15 @@ namespace wintools
 	namespace consle
 	{
 		void cSetColor(Color Foreground,Color Background);
+		void cCls();
+		void cPause();
+	}
+	namespace playtone
+	{
+		void PlayError();
+		void PlayWarning();
+		void PlayInfo();
+		void PlayQuestion();
 	}
 }
 
@@ -75,9 +84,5 @@ int RealRandom();
 
 //About PlayTone
 
-void PlayError();
-void PlayWarning();
-void PlayInfo();
-void PlayQuestion();
 
 #endif 

@@ -5,6 +5,6 @@
 
 int main()
 {
-	wintools::consle::cSetColor(Color::BLUE, Color::RED);
+	
 	
 }

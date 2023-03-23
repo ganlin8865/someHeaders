@@ -106,6 +106,16 @@ void wintools::consle::cSetColor(Color ForegroundColor, Color BackgroundColor)
     system(command.c_str());
 }
 
+void wintools::consle::cCls()
+{
+    system("cls");
+}
+
+void wintools::consle::cPause()
+{
+    system("pause");
+}
+
 //About Random
 
 int RealRandom()
@@ -124,25 +134,22 @@ int RealRandom()
 
 //About PlayTone
 
-void PlayError()
+void wintools::playtone::PlayError()
 {
 	MessageBeep(0x00000010L);
 }
 
-void PlayWarning()
+void wintools::playtone::PlayWarning()
 {
 	MessageBeep(0x00000030L);
 }
 
-void PlayInfo()
+void wintools::playtone::PlayInfo()
 {
 	MessageBeep(0x00000040L);
 }
 
-void PlayQuestion()
+void wintools::playtone::PlayQuestion()
 {
 	MessageBeep(0x00000020L);
 }
-
-
-
