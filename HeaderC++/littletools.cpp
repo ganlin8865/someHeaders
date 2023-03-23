@@ -34,10 +34,6 @@ void InsertionSort(int arr[], int size)
     }
 }
 
-//About Stack
-
-
-
 //About Random
 
 int RandomInt(int L, int R)
