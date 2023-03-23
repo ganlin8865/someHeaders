@@ -3,6 +3,8 @@
 #define WINDOWSTOOLS_H
 
 #include <windows.h>
+#include <cstdlib>
+#include <string>
 
 //About MessageBox
 
@@ -12,9 +14,24 @@ extern "C"
 	int WINAPI MessageBoxTimeoutW(IN HWND hwnd, IN LPCWSTR lpText, IN LPCWSTR lpCaption, IN UINT uType, IN WORD wLanguageId, IN DWORD dwMilliseconds);
 }
 
-enum Color
+enum Color 
 {
-	
+	BLACK,
+	BLUE,
+	GREEN,
+	CYAN,
+	RED,
+	MAGENTA,
+	BROWN,
+	LIGHTGRAY,
+	DARKGRAY,
+	LIGHTBLUE,
+	LIGHTGREEN,
+	LIGHTCYAN,
+	LIGHTRED,
+	LIGHTMAGENTA,
+	YELLOW,
+	WHITE
 };
 
 namespace wintools
@@ -48,7 +65,7 @@ namespace wintools
 	}
 	namespace consle
 	{
-		void cSetColor();
+		void cSetColor(Color Foreground,Color Background);
 	}
 }
 

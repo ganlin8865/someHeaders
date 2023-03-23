@@ -44,7 +44,15 @@ int ltools::random::RandomInt(int L, int R)
     return dis(gen);
 }
 
-float ltools::random::RandomFloat(double L, double R)
+float ltools::random::RandomFloat(float L, float R)
+{
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dis(L, R);
+    return dis(gen);
+}
+
+double ltools::random::RandomDouble(double L, double R)
 {
     random_device rd;
     mt19937 gen(rd());

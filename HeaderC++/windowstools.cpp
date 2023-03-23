@@ -82,7 +82,29 @@ void wintools::window::sHideForeWindow()
 	wintools::window::sHideWindow(hForegroundWindow);
 }
 
+//About Consle
 
+void wintools::consle::cSetColor(Color ForegroundColor, Color BackgroundColor)
+{
+    std::string command = "color ";
+    if (BackgroundColor <= 9) 
+    {
+        command += std::to_string(BackgroundColor);
+    }
+    else 
+    {
+        command += 'A' + (BackgroundColor - 10);
+    }
+    if (ForegroundColor <= 9) 
+    {
+        command += std::to_string(ForegroundColor);
+    }
+    else 
+    {
+        command += 'A' + (ForegroundColor - 10);
+    }
+    system(command.c_str());
+}
 
 //About Random
 

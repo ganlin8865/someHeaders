@@ -184,7 +184,8 @@ namespace ltools
 	namespace random
 	{
 		int RandomInt(int L, int R);
-		float RandomFloat(double L, double R);
+		float RandomFloat(float L, float R);
+		double RandomDouble(double L, double R);
 	}
 }
 

@@ -1,11 +1,10 @@
 //hello!
 #include "littletools.h"
 #include <iostream>
-
-using namespace ltools;
+#include "windowstools.h"
 
 int main()
 {
-	stack::stack a;
+	wintools::consle::cSetColor(Color::BLUE, Color::RED);
 	
 }
