@@ -4,77 +4,85 @@ HCRYPTPROV prov;
 
 //About MessageBox
 
-void MsgBoxW(LPCWSTR lpTitle, LPCWSTR lpInfo, UINT uTypename)
+void wintools::msgbox::MsgBoxW(LPCWSTR lpTitle, LPCWSTR lpInfo, UINT uTypename)
 {
 	MessageBoxW(NULL, lpInfo, lpTitle, uTypename);
 }
 
-void MsgBoxA(LPCSTR lpTitle, LPCSTR lpInfo, UINT uTypename)
+void wintools::msgbox::MsgBoxA(LPCSTR lpTitle, LPCSTR lpInfo, UINT uTypename)
 {
 	MessageBoxA(NULL, lpInfo, lpTitle, uTypename);
 }
 
-void MsgErrorA(LPCSTR lpTitle, LPCSTR lpInfo)
+void wintools::msgbox::MsgErrorA(LPCSTR lpTitle, LPCSTR lpInfo)
 {
-	MsgBoxA(lpTitle, lpInfo, 0x00000010L);
+	wintools::msgbox::MsgBoxA(lpTitle, lpInfo, 0x00000010L);
 }
 
-void MsgErrorW(LPCWSTR lpTitle, LPCWSTR lpInfo)
+void wintools::msgbox::MsgErrorW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 {
-	MsgBoxW(lpTitle, lpInfo, 0x00000010L);
+	wintools::msgbox::MsgBoxW(lpTitle, lpInfo, 0x00000010L);
 }
 
-void MsgWarningA(LPCSTR lpTitle, LPCSTR lpInfo)
+void wintools::msgbox::MsgWarningA(LPCSTR lpTitle, LPCSTR lpInfo)
 {
-	MsgBoxA(lpTitle, lpInfo, 0x00000030L);
+	wintools::msgbox::MsgBoxA(lpTitle, lpInfo, 0x00000030L);
 }
 
-void MsgWarningW(LPCWSTR lpTitle, LPCWSTR lpInfo)
+void wintools::msgbox::MsgWarningW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 {
-	MsgBoxW(lpTitle, lpInfo, 0x00000030L);
+	wintools::msgbox::MsgBoxW(lpTitle, lpInfo, 0x00000030L);
 }
 
-void MsgInfoA(LPCSTR lpTitle, LPCSTR lpInfo)
+void wintools::msgbox::MsgInfoA(LPCSTR lpTitle, LPCSTR lpInfo)
 {
-	MsgBoxA(lpTitle, lpInfo, 0x00000040L);
+	wintools::msgbox::MsgBoxA(lpTitle, lpInfo, 0x00000040L);
 }
 
-void MsgInfoW(LPCWSTR lpTitle, LPCWSTR lpInfo)
+void wintools::msgbox::MsgInfoW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 {
-	MsgBoxW(lpTitle, lpInfo, 0x00000040L);
+	wintools::msgbox::MsgBoxW(lpTitle, lpInfo, 0x00000040L);
 }
 
-void MsgQuestionA(LPCSTR lpTitle, LPCSTR lpInfo)
+void wintools::msgbox::MsgQuestionA(LPCSTR lpTitle, LPCSTR lpInfo)
 {
-	MsgBoxA(lpTitle, lpInfo, 0x00000020L);
+	wintools::msgbox::MsgBoxA(lpTitle, lpInfo, 0x00000020L);
 }
 
-void MsgQuestionW(LPCWSTR lpTitle, LPCWSTR lpInfo)
+void wintools::msgbox::MsgQuestionW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 {
-	MsgBoxW(lpTitle, lpInfo, 0x00000020L);
+	wintools::msgbox::MsgBoxW(lpTitle, lpInfo, 0x00000020L);
 }
 
 //About Window
 
-void sHideWindow(HWND hwnd)
+void wintools::window::sHideWindow(HWND hwnd)
 {
 	ShowWindow(hwnd, SW_HIDE);
 }
 
-void sShowWindow(HWND hwnd)
+void wintools::window::sShowWindow(HWND hwnd)
 {
 	ShowWindow(hwnd, SW_SHOW);
 }
 
-void sMinWindow(HWND hwnd)
+void wintools::window::sMinWindow(HWND hwnd)
 {
     ShowWindow(hwnd, SW_SHOWMINIMIZED);
 }
 
-void sMaxWindow(HWND hwnd)
+void wintools::window::sMaxWindow(HWND hwnd)
 {
     ShowWindow(hwnd, SW_SHOWMAXIMIZED);
 }
+
+void wintools::window::sHideForeWindow()
+{
+	HWND hForegroundWindow = GetForegroundWindow();
+	wintools::window::sHideWindow(hForegroundWindow);
+}
+
+
 
 //About Random
 

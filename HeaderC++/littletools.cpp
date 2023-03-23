@@ -5,7 +5,7 @@ using namespace std;
 
 //About Sort
 
-void BubbleSort(int arr[], int size)
+void ltools::sort::BubbleSort(int arr[], int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
@@ -19,7 +19,7 @@ void BubbleSort(int arr[], int size)
     }
 }
 
-void InsertionSort(int arr[], int size)
+void ltools::sort::InsertionSort(int arr[], int size)
 {
     for (int i = 1; i < size; i++) 
     {
@@ -36,7 +36,7 @@ void InsertionSort(int arr[], int size)
 
 //About Random
 
-int RandomInt(int L, int R)
+int ltools::random::RandomInt(int L, int R)
 {
     random_device rd;
     mt19937 gen(rd()); 
@@ -44,7 +44,7 @@ int RandomInt(int L, int R)
     return dis(gen);
 }
 
-float RandomFloat(double L, double R)
+float ltools::random::RandomFloat(double L, double R)
 {
     random_device rd;
     mt19937 gen(rd());
