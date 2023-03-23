@@ -1,41 +1,11 @@
+//hello!
+#include "littletools.h"
 #include <iostream>
-#include <boost/timer/timer.hpp>
-using namespace std;
-int n, a, b, c, t, ans;
+
 int main()
 {
-	cin >> n >> a >> b;
-	for (int i = 1; i <= n; i++)
-	{
-		cin >> t;
-		if (t == 1)
-		{
-			if (a)
-			{
-				a--;
-			}
-			else if (b)
-			{
-				b--;
-				c++;
-			}
-			else if (c)
-			{
-				c--;
-			}
-			else
-			{
-				ans += t;
-			}
-		}
-		else if (b)
-		{
-			b--;
-		}
-		else
-		{
-			ans += t;
-		}
-	}
-	cout << ans << endl;
+	int a[10] = { 1, 2, 7, 4, 3, 100, 65 };
+	sort s;
+	s.sort::BubbleSort(a, 10);
+	std::cout << a[1] << a[2] << a[3] << a[4];
 }
