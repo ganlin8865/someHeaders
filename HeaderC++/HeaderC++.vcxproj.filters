@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HeaderC++.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="winmsg.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="littletools.h">
       <Filter>头文件</Filter>
     </ClCompile>
@@ -32,9 +26,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="winmsg.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="windowstools.h">
       <Filter>头文件</Filter>
     </ClInclude>
