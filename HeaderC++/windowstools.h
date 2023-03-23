@@ -38,4 +38,11 @@ void sMaxWindow(HWND hwnd);
 
 int RealRandom();
 
+//About PlayTone
+
+void PlayError();
+void PlayWarning();
+void PlayInfo();
+void PlayQuestion();
+
 #endif 

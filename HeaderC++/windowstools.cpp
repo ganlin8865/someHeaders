@@ -92,4 +92,27 @@ int RealRandom()
     return out & 0x7fffffff;
 }
 
+//About PlayTone
+
+void PlayError()
+{
+	MessageBeep(0x00000010L);
+}
+
+void PlayWarning()
+{
+	MessageBeep(0x00000030L);
+}
+
+void PlayInfo()
+{
+	MessageBeep(0x00000040L);
+}
+
+void PlayQuestion()
+{
+	MessageBeep(0x00000020L);
+}
+
+
 
