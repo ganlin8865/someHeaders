@@ -174,7 +174,6 @@ namespace ltools
 			}
 		};
 	}
-	
 	//About Sort
 	namespace sort
 	{

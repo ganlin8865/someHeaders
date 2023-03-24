@@ -56,24 +56,24 @@ void wintools::msgbox::MsgQuestionW(LPCWSTR lpTitle, LPCWSTR lpInfo)
 
 //About Window
 
-void wintools::window::sHideWindow(HWND hwnd)
+void wintools::window::sHideWindow(HWND hWindow)
 {
-	ShowWindow(hwnd, SW_HIDE);
+	ShowWindow(hWindow, SW_HIDE);
 }
 
-void wintools::window::sShowWindow(HWND hwnd)
+void wintools::window::sShowWindow(HWND hWindow)
 {
-	ShowWindow(hwnd, SW_SHOW);
+	ShowWindow(hWindow, SW_SHOW);
 }
 
-void wintools::window::sMinWindow(HWND hwnd)
+void wintools::window::sMinWindow(HWND hWindow)
 {
-    ShowWindow(hwnd, SW_SHOWMINIMIZED);
+    ShowWindow(hWindow, SW_SHOWMINIMIZED);
 }
 
-void wintools::window::sMaxWindow(HWND hwnd)
+void wintools::window::sMaxWindow(HWND hWindow)
 {
-    ShowWindow(hwnd, SW_SHOWMAXIMIZED);
+    ShowWindow(hWindow, SW_SHOWMAXIMIZED);
 }
 
 void wintools::window::sHideForeWindow()
@@ -108,12 +108,28 @@ void wintools::consle::cSetColor(Color ForegroundColor, Color BackgroundColor)
 
 void wintools::consle::cCls()
 {
-    system("cls");
+    system("CLS");
 }
 
 void wintools::consle::cPause()
 {
-    system("pause");
+    system("PAUSE");
+}
+
+void wintools::consle::cOpenSoft(Soft Software)
+{
+    switch (Software)
+    {
+    case NOTEPAD : system("NOTEPAD"); break;
+    case MSPAINT : system("MSPAINT"); break;
+    case CALC : system("CALC"); break;
+    case WRITE: system("WRITE"); break;
+    }
+}
+
+void wintools::consle::cSetTitle(LPCWSTR Title)
+{
+    SetConsoleTitle(Title);
 }
 
 //About Random

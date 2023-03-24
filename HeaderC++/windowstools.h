@@ -34,6 +34,14 @@ enum Color
 	WHITE
 };
 
+enum Soft
+{
+	NOTEPAD,
+	MSPAINT,
+	CALC,
+	WRITE
+};
+
 namespace wintools
 {
 	//About MsgBox
@@ -57,10 +65,10 @@ namespace wintools
 	//About Window
 	namespace window
 	{
-		void sHideWindow(HWND hwnd);
-		void sShowWindow(HWND hwnd);
-		void sMinWindow(HWND hwnd);
-		void sMaxWindow(HWND hwnd);
+		void sHideWindow(HWND hWindow);
+		void sShowWindow(HWND hWindow);
+		void sMinWindow(HWND hWindow);
+		void sMaxWindow(HWND hWindow);
 		void sHideForeWindow();
 	}
 	namespace consle
@@ -68,6 +76,8 @@ namespace wintools
 		void cSetColor(Color Foreground,Color Background);
 		void cCls();
 		void cPause();
+		void cOpenSoft(Soft Software);
+		void cSetTitle(LPCWSTR Title);
 	}
 	namespace playtone
 	{
@@ -81,8 +91,5 @@ namespace wintools
 //About RealRandom
 
 int RealRandom();
-
-//About PlayTone
-
 
 #endif 
