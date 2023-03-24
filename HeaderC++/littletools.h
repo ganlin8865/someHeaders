@@ -181,6 +181,19 @@ namespace ltools
 		void InsertionSort(int arr[], int size);
 		void QuickSort(int arr[]);
 	}
+	namespace classic
+	{
+		template<typename T>
+		void print(T content)
+		{
+			std::cout << content;
+		}
+		template<typename T>
+		void input(T& content)
+		{
+			std::cin >> content;
+		}
+	}
 	//About Random
 	namespace random
 	{

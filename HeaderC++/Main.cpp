@@ -12,14 +12,11 @@ using namespace wintools::window;
 
 int main() 
 {
-	MessageBox(nullptr, L"Hello World!", L"Sample Message Box", MB_OK);
-	HWND hwnd = FindWindow(nullptr, L"Sample Message Box");
-	if (hwnd != nullptr) 
-	{
-		std::srand(std::time(nullptr));
-		int x = std::rand() % 800;
-		int y = std::rand() % 600;
-		MoveWindow(hwnd, x, y, 300, 150, TRUE);
-	}
+	int a;
+	ltools::classic::print('f');
+	ltools::classic::print(1234);
+	ltools::classic::print(345.1);
+	ltools::classic::print("hee");
+	ltools::classic::input(a);
 	return 0;
 }
